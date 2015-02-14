@@ -1,7 +1,8 @@
 Home Work #2 <br>
 Unity ID: <b>nsharm10</b><br>
 
-<h3>Test Generation and Coverage using Istanbul, Esprima, faker.js and mock-fs</h3>
+<h3>Test Generation and Coverage</h3>
+<h4>Uses Istanbul, Esprima, faker.js and mock-fs</h4>
 <br>
 <b>Screenshot of coverage result</b>
 <br>
