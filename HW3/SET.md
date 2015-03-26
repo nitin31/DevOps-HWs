@@ -22,4 +22,3 @@ The `key` is set to auto delete in 10 sec, so below are the screenshots after 10
 ![Screenshot get cli - null](https://cloud.githubusercontent.com/assets/9297464/6851422/4f6d9a20-d3b5-11e4-931e-faafed954d82.png)
 <br><br>
 ![Screenshot get browser - null](https://cloud.githubusercontent.com/assets/9297464/6851424/53efe742-d3b5-11e4-8620-59c1ec54cb5f.png)
-<br><br>
