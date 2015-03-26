@@ -3,7 +3,7 @@ Cache, Proxies, Queues
 
 ## Option 2
 
-* <h4>Step 1</h4>
+* <h3>Step 1</h3>
 <h4>`/set`</h4> 
 `/set` generates  a key and stores it on Redis. Screenshots of CLI, Browser and Redis Client included below:
     <br><br>
@@ -26,7 +26,15 @@ The `key` is set to auto delete in 10 sec, so below are the screenshots after 10
 <br><br>
 ![Screenshot get browser - null](https://cloud.githubusercontent.com/assets/9297464/6851424/53efe742-d3b5-11e4-8620-59c1ec54cb5f.png)
 <br><br>
-* <h4>Step 2</h4>
-* <h4>Step 3</h4>
-* <h4>Step 4</h4>
-* <h4>Step 5</h4>
+* <h3>Step 2</h3>
+<h4>`/recent`</h4>
+`/recent` displays the 5 most recent visited routes. The top 5 routes are queued up in Redis using `lpush` and `ltrim`. The screenshots of CLI and Browser are included below:
+<br><br>
+![Screenshot recent CLI](https://cloud.githubusercontent.com/assets/9297464/6851998/9e51bfc4-d3b8-11e4-81ae-7f4b7fe18a95.png)
+<br><br>
+![Screenshot recent Browser](https://cloud.githubusercontent.com/assets/9297464/6852000/a11179b6-d3b8-11e4-9fec-827a19eaeac9.png)
+<br><br>
+
+* <h3>Step 3</h3>
+* <h3>Step 4</h3>
+* <h3>Step 5</h3>
