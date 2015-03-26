@@ -17,5 +17,4 @@ Implement `/upload` and `/meow `. For details please check [UPLOAD.md](UPLOAD.md
 
 * <h3>Step 4 & Step 5</h3>
 
-Show multiple services running. For details please check [PROXY.md](PROXY.md)
-
+Show multiple services running and implement a working proxy to load balance between them. For details please check [PROXY.md](PROXY.md)
