@@ -13,6 +13,7 @@ Snapshot of CLI showing 3 services running:
 * There is a loadbalancer running which looks up the services addresses in Redis and redirects the request to these servers in a round robin manner.
 * When a server is chosen to redirect a request to, it is poped from the redis server and pushed at the end of the queue.
 * In this example, loadbalancer runs on localhost:3000 and uses `res.redirect()` to distribute requests.
+* To run this service, run both `node main.js` and `node loadbalancer.js`.
 * Few screenshots are included below.
 
 Different requests served to different servers depending on the queue values:
