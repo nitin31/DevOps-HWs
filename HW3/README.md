@@ -36,5 +36,10 @@ The `key` is set to auto delete in 10 sec, so below are the screenshots after 10
 <br><br>
 
 * <h3>Step 3</h3>
-* <h3>Step 4</h3>
-* <h3>Step 5</h3>
+
+Implement `/upload` and `/meow `. For details please check UPLOAD.md
+
+* <h3>Step 4 & Step 5</h3>
+
+Show multiple services running. For details please check PROXY.md
+
