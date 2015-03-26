@@ -1,7 +1,7 @@
 
 ## STEP 1
 
-<h4>`/set`</h4> 
+####`/set`
 `/set` generates  a key and stores it on Redis. Screenshots of CLI, Browser and Redis Client included below:
     <br><br>
 ![Screenshot set cli](https://cloud.githubusercontent.com/assets/9297464/6850932/6867690a-d3b2-11e4-82c3-b81a6951e29a.png)
@@ -10,7 +10,7 @@
     <br><br>
 ![Screenshot set redis](https://cloud.githubusercontent.com/assets/9297464/6851577/5bc35d86-d3b6-11e4-9912-e4f726cfca57.png)
     <br><br>
-<h4> /get</h4>
+####`/get`
 `/get` returns the value of the `key` from Redis to the client. Screenshots of CLI and Browser included below:
 <br><br>
 ![Screenshot get cli](https://cloud.githubusercontent.com/assets/9297464/6851316/b55beac2-d3b4-11e4-8f8f-1f9b7c170bb3.png)
