@@ -14,11 +14,13 @@ Cache, Proxies, Queues
 ![Screenshot set redis](https://cloud.githubusercontent.com/assets/9297464/6851577/5bc35d86-d3b6-11e4-9912-e4f726cfca57.png)
     <br><br>
 <h4> `/get`</h4>
-
+`/get` returns the value of the `key` from Redis to the client. Screenshots of CLI and Browser included below:
 <br><br>
 ![Screenshot get cli](https://cloud.githubusercontent.com/assets/9297464/6851316/b55beac2-d3b4-11e4-8f8f-1f9b7c170bb3.png)
 <br><br>
 ![Screenshot get browser](https://cloud.githubusercontent.com/assets/9297464/6851319/b8f33262-d3b4-11e4-8ec1-1556fa90816c.png)
+<br><br>
+The `key` is set to auto delete in 10 sec, so below are the screenshots after 10 seconds showing that the key gets deleted: 
 <br><br>
 ![Screenshot get cli - null](https://cloud.githubusercontent.com/assets/9297464/6851422/4f6d9a20-d3b5-11e4-931e-faafed954d82.png)
 <br><br>
