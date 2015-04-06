@@ -1,5 +1,5 @@
 # DevOps-HWs
-<b>Repository for CSC 591-004 DevOps Homeworks</b>
+###Repository for CSC 591-004 DevOps Homeworks
 
 <p><b>HomeWork#1</b>: Demonstrate authentication and simple API call to Amazon AWS</p>
 
