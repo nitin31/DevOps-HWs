@@ -7,4 +7,4 @@
 
 <p>HomeWork#3: Proxies, Queues and Cache Fluency.</p>
 
-<p>Deployment, Data Migration and Mirroring.</p>
+<p>HomeWork#3: Deployment, Data Migration and Mirroring.</p>
