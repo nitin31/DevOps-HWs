@@ -5,4 +5,6 @@
 
 <p>HomeWork#2: Test Generation and Coverage using Istanbul, Esprima, faker.js and mock-fs</p>
 
-<p>HomeWork#3: Proxies, Queues and Cache Fluency.
+<p>HomeWork#3: Proxies, Queues and Cache Fluency.</p>
+
+<p>Deployment, Data Migration and Mirroring.</p>
