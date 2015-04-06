@@ -1,0 +1,2 @@
+#!/bin/sh
+GIT_WORK_TREE=/home/nitin/Desktop/Deployment/deploy/green-www/ git checkout -f

@@ -1,0 +1,2 @@
+#!/bin/sh
+GIT_WORK_TREE=/home/nitin/Desktop/Deployment/deploy/blue-www/ git checkout -f
