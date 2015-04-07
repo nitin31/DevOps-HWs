@@ -4,6 +4,9 @@
 * `infrastructure.js` started using forever.
 * in `main.js`, a `/switch` route restarts the service using `forever restart`.
 * when the rervice restarts, redis used to switch between slices. 
+
+####Screenshots
+
 * `infrastructure.js` starts with BLUE as default on CLI
 <br><br>
 ![infra1](https://cloud.githubusercontent.com/assets/9297464/7016219/ee155b62-dcad-11e4-86bd-7bc440743aa2.png)
