@@ -12,25 +12,20 @@ var app = express()
 var GREEN = 'http://127.0.0.1:3001';
 var BLUE  = 'http://127.0.0.1:3002';
 
+var SWITCH_TARGET = GREEN
+
 var args = process.argv.slice(2);
 var PORT = args[0];
 var MIRROR = args[1]; 
+// console.log(PORT)
 
-
-// Uncomment to push to Blue slice
+console.log(MIRROR);
+// Comment
 //Redis client on port 6379 for BLUE 
-// var client = redis.createClient(6379, '127.0.0.1', {})
-
-//Redis client on port 6380 for GREEN
-// var client_other = redis.createClient(6380, '127.0.0.1', {})
-
-// Uncomment to push to Green slice
-//Redis client on port 6380 for BLUE 
 var client_other = redis.createClient(6379, '127.0.0.1', {})
 
-// //Redis client on port 6379 for GREEN
+//Redis client on port 6379 for GREEN
 var client = redis.createClient(6380, '127.0.0.1', {})
-
 app.use(function(req, res, next) 
 {
 	console.log(req.method, req.url);
@@ -43,16 +38,12 @@ app.use(function(req, res, next)
 
 app.get('/', function(req, res) 
 {
-	// Uncomment when pushing to Blue slice and vice versa
-	res.send("!This is a test with redis and multer with watch flags!! This is GREEN");
-	// Uncomment when pushing to Green slice and vice versa
-	// res.send("!This is a test with redis and multer with watch flags!! This is GREEN");
+	res.send("!This is a test with redis and multer with watch flags!! This is GREEN :: ");
 });
 
 app.get('/upload',[ multer({ dest: './uploads/'}) , function(req, res) {
 	{
-		//To execute the code from github, change this absolute path
-		res.sendfile("/home/nitin/Desktop/App/index.html")   
+		res.sendfile("/home/nitin/Desktop/App/index.html")
 	}
 }]);
 
@@ -74,7 +65,7 @@ app.post('/upload',[ multer({ dest: './uploads/'}), function(req, res){
 	  		}
 		});
 	}
-	//To execute the code from github, change this absolute path
+
 	res.sendfile("/home/nitin/Desktop/App/index.html")
     //res.status(204).end()
 }]);
@@ -136,9 +127,8 @@ app.get('/recent', function(req, res) {
 
 app.get('/switch', function(req, res){
 	{
-		//To execute the code from github, change this absolute path
 		exec('forever restart /home/nitin/Desktop/Deployment/infrastructure.js');
-		res.send('switched slices. go to home page to see the different slice')
+		res.send('/')
 	}
 })
 
@@ -147,6 +137,12 @@ var server = app.listen(PORT, function () {
 	var host = server.address().address
 	var port = server.address().port
 
+	if (port == '3001'){
+		SWITCH_TARGET = BLUE
+	}
+	if (port == '3002'){
+		SWITCH_TARGET = GREEN
+	}
+
 	console.log('Example app listening at http://%s:%s', host, port)
 });
-

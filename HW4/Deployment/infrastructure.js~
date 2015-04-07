@@ -22,7 +22,6 @@ var tar = client_blue.rpop("target", function(err, data){
     if (data == GREEN){
       console.log("serving BLUE")
       client_blue.del("target")
-      //migrate data
       elements = client_green.lrange( "images", 0, -1, function(err, data){
         for (var i = 0; i < data.length; i++){
           client_blue.lpush("images", data[i])
@@ -34,7 +33,6 @@ var tar = client_blue.rpop("target", function(err, data){
     else{
       console.log("serving GREEN")
       client_blue.del("target")
-      //migrate data
       elements = client_blue.lrange( "images", 0, -1 ,function(err, data){
         for (var i = 0; i < data.length; i++){
           client_green.lpush("images", data[i])
@@ -100,4 +98,3 @@ process.on('SIGINT', function(){infrastructure.teardown();} );
 process.on('uncaughtException', function(err){
   console.log(err);
   infrastructure.teardown();} );
-
