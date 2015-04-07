@@ -1,7 +1,7 @@
 
 ###`/switch` 
 `/switch` route added to switch between the blue and green slice. The way switching works: 
-* `infrastructure.js` started using forever.
+* `infrastructure.js` started using forever, command used: `forever -e start infrastructure.js`.
 * in `main.js`, a `/switch` route restarts the service using `forever restart`.
 * when the rervice restarts, redis used to switch between slices. 
 
